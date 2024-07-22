@@ -16,12 +16,100 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <div class="header-logo">
+                <h1 class="logo">
+                    <a href="#" title="Booki">
+                        <img src="images/logo/Booki@3x.png" alt="Logotype Booki" height="19px">
+                    </a>
+                </h1>
+            </div>
+            <div class="header-nav">
+                <ul class="nav">
+                    <li class="active"><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </div>
+        </header>
         <main>
+            <section class="hero">
+                <div class="headline">
+                    <hgroup>
+                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                        <h6>En plein centre-ville ou en pleine nature</h6>
+                    </hgroup>
+                </div>
+                <div class="search-bar">
+                    <form action="post">
+                        <label id="search-bar-label" for="search-bar-input"><i class="fa-solid fa-location-dot"></i></label>
+                        <input id="search-bar-input" type="search" name="search"  placeholder="Marseille, France">
+                        <button>
+                            <span>Rechercher</span>
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="filter-bar">
+                    <h5>Filtres</h5>
+                    <ul class="list list-pills">
+                        <li><a href="#" title="Économique"><i class="fa-solid fa-money-bill-wave"></i> Économique</a></li>
+                        <li><a href="#" title="Familial"><i class="fa-solid fa-person"></i> Familial</a></li>
+                        <li><a href="#" title="Romantique"><i class="fa-solid fa-heart"></i> Romantique</a></li>
+                        <li><a href="#" title="Nos pépites"><i class="fa-solid fa-fire"></i> Nos pépites</a></li>
+                    </ul>
+                </div>
+                <p class="info-bar"><i class="fa-solid fa-circle-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            </section>
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <div class="hebergements-title">
+                        <h2 class="section-title">Hébergements</h2>
+                        <!-- <i class="fa-solid fa-chart-line" aria-hidden="true"></i> -->
+                    </div>
+                    <div class="hebergements-cards">
+                        <a href="#">
+                            <article class="card card-stack">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel du port</h3>
+                                        <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="card card-stack">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel du port</h3>
+                                        <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <button>Afficher plus</button>
                 </section>
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -88,8 +176,60 @@
                     </div>
                 </section>
             </div>
+
+            <section class="activities">
+                <div class="activities-title">
+                    <h2 class="section-title">Activités</h2>
+                    <!-- <i class="fa-solid fa-chart-line" aria-hidden="true"></i> -->
+                </div>
+                <div class="activities-cards">
+                    <a href="#">
+                        <article class="card card-stack card-no-padding">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image d'un port de plaisance">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Vieux-Port</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card card-stack">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image d'un port de plaisance">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Vieux-Port</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer-1">
+                <div class="footer-nav-title">À propos</div>
+                <ul class="footer-nav">
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-2">
+                <div class="footer-nav-title">Nos hébergements</div>
+                <ul class="footer-nav">
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <div class="footer-nav-title">Assistance</div>
+                <ul class="footer-nav">
+                    <li><a href="#">Centre d’aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 
