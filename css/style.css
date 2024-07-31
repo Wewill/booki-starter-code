@@ -79,7 +79,6 @@ hgroup h2 + p {
 /* --- Hero */
 
 .search-bar { margin-top: 2rem; }
-
 .search-bar form { display: flex; }
 
 .search-bar label {
@@ -154,6 +153,7 @@ button {
 
 .list-pills i { 
     margin-right: .25rem;
+    font-size: 115%;
 }
 
 .list-pills li.active a,
@@ -301,21 +301,23 @@ a {
 .populaires-cards .card img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: var(--border-raduis-lg);
-    border-bottom-left-radius: var(--border-raduis-lg);
+    border-top-left-radius: calc( var(--border-raduis-lg) - 4px );
+    border-bottom-left-radius: calc( var(--border-raduis-lg) - 4px );    
 }
 
 .hebergements-cards .card img {
     height: 136px;
-    border-top-left-radius: var(--border-raduis-lg);
-    border-top-right-radius: var(--border-raduis-lg);    
+    border-top-left-radius: calc( var(--border-raduis-lg) - 4px );
+    border-top-right-radius: calc( var(--border-raduis-lg) - 4px );    
+
+    background-size: cover;
 }
 
 .activities-cards .card img {
     width: 100%;
     height: 25rem;
-    border-top-left-radius: var(--border-raduis-lg);
-    border-top-right-radius: var(--border-raduis-lg);
+    border-top-left-radius: calc( var(--border-raduis-lg) - 4px );
+    border-top-right-radius: calc( var(--border-raduis-lg) - 4px );    
 
     background-size: cover;
 }
@@ -502,7 +504,7 @@ footer {
         border-bottom: 2px solid var(--main-color);
     }
 
-    .search-bar input { padding: 0 1rem; flex-basis: fill; flex-basis: -webkit-fill-available;}
+    .search-bar input { padding: 0 1rem; flex: 1;}
 
     .search-bar button {
         filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.25));
@@ -537,18 +539,10 @@ footer {
         display: flex;
     }
 
-    .filter-bar .list-pills li a {
-        flex-basis: fill;
-        flex-basis: -webkit-fill-available;
-    }
+    .filter-bar .list-pills li a { flex:1; }
 
-    .hebergements-and-populaires {
-        margin-top: 0;
-    }
-
-    .hebergements-and-populaires section {
-        margin-bottom: 0;
-    }
+    .hebergements-and-populaires { margin-top: 0; }
+    .hebergements-and-populaires section { margin-bottom: 0; }
 
     .hebergements-cards,
     .populaires-cards,
@@ -577,18 +571,13 @@ footer {
         padding: 1.5rem 1.5rem;
     }
 
-    .activities-cards .card img {
-        height: 140px;
-    }
+    .activities-cards .card img { height: 140px; }
 
     footer {
         flex-direction: column;
         padding-right: 1.5rem;
     }
 
-    footer > div {
-        margin-bottom: 3rem;
-    }
-
+    footer > div { margin-bottom: 3rem; }
 
 }
